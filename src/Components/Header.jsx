@@ -5,9 +5,11 @@ import Login from './Modals/Login';
 import Register from './Modals/Register';
 
 // Links a las secciones del sitio productivo actual (este sitio es solo la portada "en desarrollo")
-const SITIO = 'https://andessalud.com.ar';
 const LINK_COTIZAR = 'https://andessalud.com.ar/CotizaTuPlan/?utm_anuncio=WEB_ANDES&utm_campana=ORGANICO&utm_source=ORGANICO%20WEB_ANDES';
-const LINK_DR_ONLINE = 'https://andessalud.com.ar/dr-online';
+const LINK_GESTIONES = 'https://andessalud.com.ar/#second-section';
+const LINK_DR_ONLINE = 'https://andessalud.com.ar/dr-online/';
+const LINK_BIENESTAR = 'https://andessalud.com.ar/#fourth-section';
+const LINK_CONTACTO = 'https://andessalud.com.ar/#fifth-section';
 
 const Header = () => {
 	const [emergencyOpen, setEmergencyOpen] = useState(false);
@@ -74,16 +76,16 @@ const Header = () => {
 							>
 								Cotizá online
 							</a>
-							<a href={SITIO} className="nav-link">
+							<a href={LINK_GESTIONES} className="nav-link">
 								Gestiones
 							</a>
 							<a href={LINK_DR_ONLINE} className="nav-link">
 								Doctor online
 							</a>
-							<a href={SITIO} className="nav-link">
+							<a href={LINK_BIENESTAR} className="nav-link">
 								Zona Bienestar
 							</a>
-							<a href={SITIO} className="nav-link">
+							<a href={LINK_CONTACTO} className="nav-link">
 								Contacto
 							</a>
 						</nav>

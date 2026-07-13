@@ -29,7 +29,7 @@ const EnDesarrollo = () => {
 					href="https://andessalud.com.ar"
 					className="inline-block bg-[#0F4F87] text-white font-semibold py-3 px-8 rounded-lg border-2 border-[#0F4F87] transition-all duration-300 hover:bg-white hover:text-[#0F4F87]"
 				>
-					Ir al sitio actual
+					Volver al Inicio
 				</a>
 
 				{/* Barra decorativa "en progreso" */}

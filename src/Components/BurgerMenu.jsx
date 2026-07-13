@@ -4,9 +4,11 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { HiOutlineX } from 'react-icons/hi';
 
 // Links a las secciones del sitio productivo actual (este sitio es solo la portada "en desarrollo")
-const SITIO = 'https://andessalud.com.ar';
 const LINK_COTIZAR = 'https://andessalud.com.ar/CotizaTuPlan/?utm_anuncio=WEB_ANDES&utm_campana=ORGANICO&utm_source=ORGANICO%20WEB_ANDES';
-const LINK_DR_ONLINE = 'https://andessalud.com.ar/dr-online';
+const LINK_GESTIONES = 'https://andessalud.com.ar/#second-section';
+const LINK_DR_ONLINE = 'https://andessalud.com.ar/dr-online/';
+const LINK_BIENESTAR = 'https://andessalud.com.ar/#fourth-section';
+const LINK_CONTACTO = 'https://andessalud.com.ar/#fifth-section';
 
 const BurgerMenu = ({
 	setEmergencyOpen,
@@ -24,16 +26,16 @@ const BurgerMenu = ({
 			<a id="home" className="menu-selected" href={LINK_COTIZAR}>
 				Cotizá online
 			</a>
-			<a id="about" href={SITIO}>
+			<a id="about" href={LINK_GESTIONES}>
 				Gestiones
 			</a>
 			<a id="Our Solutions" href={LINK_DR_ONLINE}>
 				Doctor online
 			</a>
-			<a id="services" href={SITIO}>
+			<a id="services" href={LINK_BIENESTAR}>
 				Zona Bienestar
 			</a>
-			<a id="Our Clients" href={SITIO}>
+			<a id="Our Clients" href={LINK_CONTACTO}>
 				Contacto
 			</a>
 			<div
