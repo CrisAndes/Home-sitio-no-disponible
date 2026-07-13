@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  /* MODAL DE EMERGENCIAS */
+  .emergency-item {
+    @apply flex flex-col;
+  }
+
+  .emergency-title {
+    @apply text-xl text-[#724100] font-bold;
+  }
+
+  .emergency-number {
+    @apply text-[#FFB71B] font-bold mb-1 text-3xl;
+  }
+
+  /* FORMULARIOS DE LOGIN / REGISTRO */
+  .login-form input {
+    @apply border block w-full focus:outline-none rounded border-[#8B99B2] py-2 pr-2 pl-3;
+  }
+  .login-form input.error {
+    @apply border block w-full focus:outline-none rounded border-[#E52E2E] py-2 pr-2 pl-3;
+  }
+
+  .login-form {
+    @apply flex flex-col mb-5;
+  }
+
+  .register-form {
+    @apply !mb-2;
+  }
+
+  .login-form label {
+    @apply text-sm font-[500] mb-1 text-[#191B1E];
+  }
+
+  .login-form input::placeholder {
+    @apply text-[#a3a3a3];
+  }
+}
+
+/* MENU HAMBURGUESA (mobile) */
+.bm-overlay {
+  top: 0 !important;
+}
+
+.bm-menu-wrap {
+  max-width: 100vw;
+  background-color: #ffb71b;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bm-item {
+  padding: 20px 30px;
+  color: #2e2f30;
+  transition: all 0.3s ease-in-out;
+}
+
+.bm-item:hover {
+  background: #eea914;
+}
+
+.bm-cross-button {
+  color: #2e2f30;
+  margin-top: 20px;
+}
+
+.bm-item-list {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bm-menu-wrap .logo:hover {
+  background: none;
+}
+.bm-menu-wrap .logo {
+  margin-bottom: 10px;
+}
+
+.bm-menu-wrap .menu-selected {
+  color: #fff;
+  background-color: #00205c;
+}
