@@ -10,9 +10,10 @@ const LINK_DR_ONLINE = 'https://andessalud.com.ar/dr-online/';
 const LINK_BIENESTAR = 'https://andessalud.com.ar/#fourth-section';
 const LINK_CONTACTO = 'https://andessalud.com.ar/#fifth-section';
 
+const SITIO = 'https://andessalud.com.ar';
+
 const BurgerMenu = ({
 	setEmergencyOpen,
-	setLoginOpen,
 }) => {
 	return (
 		<Menu
@@ -21,7 +22,9 @@ const BurgerMenu = ({
 			customCrossIcon={<HiOutlineX />}
 			className="w-9 h-9"
 		>
-			<img src="/gif/logo.gif" className="w-[67%] xl:w-auto logo" alt="Andes Salud" />
+			<a href={SITIO} className="logo">
+				<img src="/gif/logo.gif" className="w-[67%] xl:w-auto" alt="Andes Salud" />
+			</a>
 
 			<a id="home" className="menu-selected" href={LINK_COTIZAR}>
 				Cotizá online
@@ -44,10 +47,6 @@ const BurgerMenu = ({
 			>
 				<img src="/svg/ambulance.svg" className="w-6" alt="" />
 				<a className="!flex !flex-row">Emergencias</a>
-			</div>
-			<div onClick={() => setLoginOpen(true)} className="!flex space-x-3 cursor-pointer">
-				<img src="/svg/login-icon.svg" className="w-6" alt="" />
-				<div className="!flex !flex-row">Ingresar</div>
 			</div>
 		</Menu>
 	);

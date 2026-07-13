@@ -22,30 +22,6 @@
   .emergency-number {
     @apply text-[#FFB71B] font-bold mb-1 text-3xl;
   }
-
-  /* FORMULARIOS DE LOGIN / REGISTRO */
-  .login-form input {
-    @apply border block w-full focus:outline-none rounded border-[#8B99B2] py-2 pr-2 pl-3;
-  }
-  .login-form input.error {
-    @apply border block w-full focus:outline-none rounded border-[#E52E2E] py-2 pr-2 pl-3;
-  }
-
-  .login-form {
-    @apply flex flex-col mb-5;
-  }
-
-  .register-form {
-    @apply !mb-2;
-  }
-
-  .login-form label {
-    @apply text-sm font-[500] mb-1 text-[#191B1E];
-  }
-
-  .login-form input::placeholder {
-    @apply text-[#a3a3a3];
-  }
 }
 
 /* MENU HAMBURGUESA (mobile) */
